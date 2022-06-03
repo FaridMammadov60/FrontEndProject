@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.headers .header-blue {
+  padding-top: 0.5625rem;
+  padding-bottom: 0.5625rem;
+  background-color: #233a95;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+.headers .header-row1 {
+  border: ridge 1px;
+  border-color: #e3e4e6;
+  font-size: 13px;
+}
+
+.headers .header-row1 a:hover {
+  color: #2bbef9;
+}
+
+.headers .header-row1 .header-yuzfaiz {
+  display: block !important;
+}
+
+.headers .header-row1 #header-number {
+  color: #2bbef9;
+}
+
+.headers .header-row1 .header-lan span a {
+  color: black;
+}
+
+.headers .header-row1 .header-lan span:hover a, .headers .header-row1 .header-lan span:hover i {
+  color: #2bbef9;
+}
+/*# sourceMappingURL=home.css.map */

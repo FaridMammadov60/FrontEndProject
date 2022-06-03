@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headers {
+    
+    .header-blue {
+        padding-top: 0.5625rem;
+        padding-bottom: 0.5625rem;
+        background-color: rgb(35, 58, 149);
+        color: white;
+        text-align: center;
+        font-size: .75rem;
+    }
+    .header-row1{
+        border: ridge 1px;
+        border-color: rgb(227,228,230);
+        font-size: 13px;
+
+        a:hover{
+            color: rgb(43,190,249);
+        }
+        .header-yuzfaiz{
+            display: block !important ; 
+        }
+        #header-number{
+            color: rgba($color: #2bbef9, $alpha: 1.0);
+        }
+        .header-lan{
+            span{
+                a{
+                    color: black;
+                }
+            }
+            span:hover{
+                a,i{
+                    color: rgb(43,190,249);
+                }
+                
+            }           
+            
+        }
+    }
+}
