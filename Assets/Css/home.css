@@ -17,7 +17,7 @@
 .headers .header-row1 {
   border: ridge 1px;
   border-color: #e3e4e6;
-  font-size: 13px;
+  font-size: .75rem;
 }
 
 .headers .header-row1 a:hover {
@@ -57,7 +57,8 @@
   color: black;
 }
 
-.headers .header-row1 .header-lan-and-pul .header-lan span:hover a, .headers .header-row1 .header-lan-and-pul .header-lan span:hover i {
+.headers .header-row1 .header-lan-and-pul .header-lan span:hover a,
+.headers .header-row1 .header-lan-and-pul .header-lan span:hover i {
   color: #2bbef9;
 }
 
@@ -69,5 +70,329 @@
 
 .headers .header-row1 .header-lan-and-pul .header-lan:hover .lan a:hover {
   color: #2bbef9;
+}
+
+.headers .header-row2 .bacola-img {
+  padding-left: 40px;
+}
+
+.headers .header-row2 .bacola-img .bacola-iconalt {
+  font-size: .6875rem;
+  opacity: 0.5;
+}
+
+.headers .header-row2 .location-heads {
+  padding-left: 40px;
+}
+
+.headers .header-row2 .location-heads .location-head {
+  width: 150px;
+  border-color: black;
+  border: ridge;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.headers .header-row2 .location-heads .location-head .location-span {
+  display: block;
+  font-size: .625rem;
+  opacity: 0.5;
+  text-decoration: none;
+  color: black;
+}
+
+.headers .header-row2 .location-heads .location-head .location-div {
+  display: inline;
+  text-decoration: none;
+  color: #233a95;
+}
+
+.headers .header-row2 .location-heads .location-head i {
+  padding-left: 5px;
+}
+
+.headers .header-row2 .location-heads .head-search {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+  font-weight: 400;
+  width: 600px;
+}
+
+.headers .header-row2 .location-heads .head-search #head-search-input {
+  position: absolute;
+  font-size: .9375rem;
+  height: 60px;
+  display: inline;
+  opacity: 0.5;
+  background-color: #f3f4f7;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  top: -50px;
+}
+
+.headers .header-row2 .location-heads .head-search i {
+  display: inline;
+  position: absolute;
+  right: 10px;
+  top: -30px;
+  font-size: 20px;
+}
+
+.headers .header-row2 .right-basket div {
+  display: inline;
+}
+
+.headers .header-row2 .right-basket .right-basket-user {
+  width: 40px;
+  border: ridge;
+  border-color: black;
+  border-radius: 50%;
+}
+
+.headers .header-row2 .right-basket .right-basket-user i {
+  font-size: 18px;
+  color: black !important;
+  padding: 5px;
+}
+
+.headers .header-row2 .right-basket .right-basket-usd {
+  padding-left: 15px;
+  color: black !important;
+  text-decoration: none;
+}
+
+.headers .header-row2 .right-basket .right-basket-basket {
+  position: relative;
+}
+
+.headers .header-row2 .right-basket .right-basket-basket #basket-icon {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border-radius: 50%;
+  background-color: #fff1ee;
+  font-size: 20px;
+  padding-left: 15px;
+  width: 50px;
+  height: 40px;
+  color: black !important;
+}
+
+.headers .header-row2 .right-basket .right-basket-basket span {
+  position: absolute;
+  border-radius: 50%;
+  left: 40px;
+  top: -15px;
+  background-color: red;
+  color: white;
+  width: 15px;
+  text-align: center;
+}
+
+.headers .header-row3 .categories {
+  position: relative;
+}
+
+.headers .header-row3 .categories i:first-child {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.headers .header-row3 .categories i:last-child {
+  position: absolute;
+  top: 15px;
+  left: 175px;
+  color: white;
+  cursor: pointer;
+}
+
+.headers .header-row3 button {
+  border-radius: 20px;
+  padding: 10px 35px 10px 25px;
+  color: white;
+  font-weight: 600;
+}
+
+.headers .header-row3 nav {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.headers .header-row3 nav ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.headers .header-row3 nav ul .home {
+  height: 50px;
+  position: relative;
+}
+
+.headers .header-row3 nav ul .home:hover .HomeSubMenu {
+  margin-top: 24.5px;
+  visibility: visible;
+  background-color: white;
+  z-index: 2;
+}
+
+.headers .header-row3 nav ul .home .HomeSubMenu {
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  left: -24px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  background: white;
+  z-index: 2;
+}
+
+.headers .header-row3 nav ul .home .HomeSubMenu:hover {
+  visibility: visible;
+  background-color: white;
+}
+
+.headers .header-row3 nav ul .home .HomeSubMenu li {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.headers .header-row3 nav ul .home .HomeSubMenu li a {
+  padding: 5px 55px 0px 5px;
+  width: 100%;
+}
+
+.headers .header-row3 nav ul .home .HomeSubMenu li a:hover {
+  padding: 5px 55px 0px 5px;
+  background-color: white;
+  color: #2BC7FBFF;
+}
+
+.headers .header-row3 nav ul .shop {
+  height: 50px;
+}
+
+.headers .header-row3 nav ul .shop .ShopSubMenu {
+  visibility: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 350px;
+  left: 0;
+  width: 98.93vw;
+  background: white;
+  margin-top: 24.5px;
+  z-index: 2;
+}
+
+.headers .header-row3 nav ul .shop .ShopSubMenu > li {
+  position: relative;
+  margin-top: 20px;
+}
+
+.headers .header-row3 nav ul .shop .ShopSubMenu > li .subListMenu {
+  position: absolute;
+  left: -15px;
+  padding: 15px;
+  width: 210px;
+}
+
+.headers .header-row3 nav ul .shop .ShopSubMenu > li .subListMenu li {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.headers .header-row3 nav ul .shop .ShopSubMenu > li .subListMenu li a {
+  top: 15px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.headers .header-row3 nav ul .shop .ShopSubMenu > li > a {
+  color: blue;
+  border: none;
+  background: white;
+}
+
+.headers .header-row3 nav ul .shop:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.headers .header-row3 nav ul .shop:hover .ShopSubMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  visibility: visible;
+  height: 350px;
+  background: white;
+  width: 98.93vw;
+  margin-top: 24.5px;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  z-index: 2;
+}
+
+.headers .header-row3 nav ul .shop:hover .ShopSubMenu > li {
+  position: relative;
+  margin-top: 20px;
+}
+
+.headers .header-row3 nav ul .shop:hover .ShopSubMenu > li .subListMenu {
+  position: absolute;
+  left: -15px;
+  padding: 15px;
+  width: 210px;
+}
+
+.headers .header-row3 nav ul .shop:hover .ShopSubMenu > li .subListMenu li {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.headers .header-row3 nav ul .shop:hover .ShopSubMenu > li .subListMenu li a {
+  top: 15px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.headers .header-row3 nav ul .shop:hover .ShopSubMenu > li > a {
+  color: blue;
+  border: none;
+  background: white;
+}
+
+.headers .header-row3 nav ul li {
+  padding: 0px !important;
+}
+
+.headers .header-row3 nav ul li > a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+}
+
+.headers .header-row3 nav ul li > a:hover {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: #cbeaff;
+  color: #2BC7FBFF;
 }
 /*# sourceMappingURL=home.css.map */
