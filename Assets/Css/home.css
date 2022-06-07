@@ -163,14 +163,7 @@
   text-decoration: none;
 }
 
-.headers .header-row2 .right-basket .right-basket-basket {
-  position: relative;
-}
-
 .headers .header-row2 .right-basket .right-basket-basket #basket-icon {
-  position: absolute;
-  top: 5px;
-  left: 4px;
   border-radius: 50%;
   background-color: #fff1ee;
   font-size: 20px;
@@ -180,15 +173,14 @@
   color: black !important;
 }
 
-.headers .header-row2 .right-basket .right-basket-basket span {
-  position: absolute;
+.headers .header-row2 .right-basket .right-basket-basket #productCount {
   border-radius: 50%;
-  left: 40px;
-  top: -15px;
   background-color: red;
   color: white;
-  width: 15px;
+  width: 20px;
   text-align: center;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .headers .header-row3 .categories {
@@ -478,5 +470,482 @@ main .carouselSection #carousel-container #carousel .content {
   z-index: 1;
   top: 10%;
   width: 30%;
+}
+
+main .deadlineSection #deadline .categories .leftSide {
+  width: 30%;
+  height: 740px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+main .deadlineSection #deadline .categories .leftSide .content h5 {
+  color: #2372C1FF;
+}
+
+main .deadlineSection #deadline .categories .leftSide .content .name {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+main .deadlineSection #deadline .categories .leftSide .content p img {
+  width: 100px;
+}
+
+main .deadlineSection #deadline .categories .leftSide .content div {
+  width: 20px;
+}
+
+main .deadlineSection #deadline .categories .leftSide .content div :first-child {
+  font-size: 16px;
+}
+
+main .deadlineSection #deadline .categories .leftSide .content div span {
+  margin-top: 12px;
+  size: 20px;
+  font-weight: 600;
+}
+
+main .deadlineSection #deadline .categories .leftSide .content .time {
+  width: 100px;
+  margin: 0 10px;
+  padding: 15px;
+  font-weight: 600;
+  color: white;
+  background: #ED174AFF;
+  border-radius: 10px;
+}
+
+main .deadlineSection #deadline .categories .rightSide {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 30px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product {
+  border: 0.5px solid #d6d6d6;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .content {
+  padding: 25px;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .content p {
+  width: 90%;
+  margin: 0 !important;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .content p img {
+  width: 40%;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .content strong {
+  font-size: 10px;
+  font-weight: 700;
+  color: #2FC573FF;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .content img {
+  width: 100%;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .deadlineSection-cart:hover button {
+  display: block !important;
+}
+
+.weekendDiscountSection .side {
+  position: relative;
+}
+
+.weekendDiscountSection .side img {
+  width: 97%;
+  border-radius: 10px;
+}
+
+.weekendDiscountSection .side .content {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.weekendDiscountSection .side .content h6 {
+  color: red;
+  font-weight: 400;
+}
+
+.carouselProductSection > div {
+  margin-left: 10.5%;
+}
+
+.carouselProductSection .product {
+  border: 0.5px solid #d6d6d6;
+  width: 20%;
+}
+
+.carouselProductSection .product .content {
+  padding: 20px;
+}
+
+.carouselProductSection .product .content a {
+  font-size: 15px;
+  width: 120%;
+  margin: 0 !important;
+  text-decoration: none;
+  color: black;
+}
+
+.carouselProductSection .product .content p img {
+  margin-left: -5px;
+  width: 60%;
+}
+
+.carouselProductSection .product .content strong {
+  padding: 8px 0;
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #2FC573FF;
+}
+
+.carouselProductSection .product .content img {
+  width: 100%;
+}
+
+.carouselProductSection .product .content button {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 30px;
+  margin: 7px 0;
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: #FFCD00FF;
+}
+
+.extraPercent {
+  background-color: #FBEACFFF;
+}
+
+.extraPercent :first-child :first-child {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.extraPercent :first-child :first-child h2 {
+  padding: 15px 0;
+}
+
+.extraProductSection > div {
+  margin-left: 11%;
+}
+
+.extraProductSection > div .product {
+  border: 0.5px solid #d6d6d6;
+  width: 20%;
+}
+
+.extraProductSection > div .product .content {
+  padding: 20px;
+}
+
+.extraProductSection > div .product .content a {
+  font-size: 15px;
+  width: 120%;
+  margin: 0 !important;
+  text-decoration: none;
+  color: black;
+}
+
+.extraProductSection > div .product .content p img {
+  margin-left: -5px;
+  width: 60%;
+}
+
+.extraProductSection > div .product .content strong {
+  padding: 8px 0;
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #2FC573FF;
+}
+
+.extraProductSection > div .product .content img {
+  width: 100%;
+}
+
+.lastSectionBody .lastSection {
+  margin-left: 10.5%;
+}
+
+.lastSectionBody .lastSection .product {
+  position: relative;
+  margin-top: 40px;
+}
+
+.lastSectionBody .lastSection .product img {
+  width: 97%;
+  border-radius: 10px;
+}
+
+.lastSectionBody .lastSection .product .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px 45px;
+}
+
+.lastSectionBody .lastSection .product .content h6 {
+  color: green;
+}
+
+.lastSectionBody .lastSection .product .content button {
+  color: white;
+  background-color: #C2C2D3FF;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+footer .couponSection .email {
+  background-color: #233A95FF;
+  width: 100%;
+  margin: 40px 0 0 0;
+}
+
+footer .couponSection .email .coupon {
+  margin-top: 50px;
+}
+
+footer .couponSection .email .content {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 30%;
+  position: relative;
+  color: white;
+}
+
+footer .couponSection .email .content p {
+  width: 75%;
+  margin: 5px 0;
+  opacity: 0.7;
+}
+
+footer .couponSection .email .content input {
+  padding: 20px 55px;
+  width: 100%;
+  margin: 30px 0 0 0;
+  border-radius: 10px;
+  outline: none;
+}
+
+footer .couponSection .email .content button {
+  position: absolute;
+  padding: 15px 25px;
+  right: 2%;
+  bottom: 10%;
+}
+
+footer .serviceBody {
+  background: #F7F8FDFF;
+  padding-top: 20px;
+}
+
+footer .serviceBody .service {
+  width: 100%;
+  border-bottom: 2px solid #c6c6c6;
+  padding: 20px 0;
+  background: #F7F8FDFF;
+}
+
+footer .serviceBody .service h5 {
+  padding: 0 0 10px 0;
+  font-size: 18px !important;
+}
+
+footer .serviceBody .service span {
+  opacity: 0.6;
+}
+
+footer .productsBody {
+  background: #F7F8FDFF;
+}
+
+footer .productsBody .products {
+  padding: 6% 0;
+}
+
+footer .productsBody .products .row ul > a {
+  font-weight: 400;
+  opacity: 1 !important;
+}
+
+footer .productsBody .products .row ul a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+
+footer .productsBody .products .row ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+footer .contactBody .contact {
+  border-bottom: 1px solid grey;
+}
+
+footer .contactBody .contact .contactNumb {
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.formSection {
+  margin-top: 20px;
+}
+
+.formSection h5 {
+  margin-top: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.formSection input {
+  outline: none !important;
+  background-color: #F3F4F7FF;
+  border: none;
+}
+
+.formSection input:focus {
+  outline: none !important;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .cntnr {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cntnr {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cntnr {
+    width: 1170px;
+  }
+}
+
+@media (max-width: 767px) {
+  #featurecntnr .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  #featurecntnr .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.cntnr {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#featurecntnr .carousel-inner .carousel-item.active,
+#featurecntnr .carousel-inner .carousel-item-next,
+#featurecntnr .carousel-inner .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  #featurecntnr .carousel-inner .carousel-item-end.active,
+  #featurecntnr .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  #featurecntnr .carousel-inner .carousel-item-start.active,
+  #featurecntnr .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  #featurecntnr .card img {
+    width: 90%;
+  }
+  #featurecntnr .carousel-item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  #featurecntnr .card img {
+    width: 100%;
+  }
+}
+
+#featurecntnr .carousel-inner .carousel-item-end,
+#featurecntnr .carousel-inner .carousel-item-start {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#featurecntnr .card {
+  border: 0;
+}
+
+#featurecntnr .card {
+  position: relative;
+}
+
+#featurecntnr .card .card-img-overlays {
+  position: absolute;
+  color: #fff;
+  font-weight: bolder;
+}
+
+#featurecntnr a {
+  text-decoration: none;
+}
+
+#featurecntnr .indicator {
+  border: 1px solid #cacaca;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 20px;
+  top: 45%;
+  padding: 3px 6px 3px 6px;
+}
+
+#featurecntnr .indicator:hover {
+  background-color: blue;
+  border: 1px solid blue;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+#featurecntnr .indicator:hover {
+  color: white;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+#featurecntnr .indicator {
+  color: lightgray;
+}
+
+#featurecntnr .float-end {
+  padding-top: 10px;
 }
 /*# sourceMappingURL=home.css.map */
