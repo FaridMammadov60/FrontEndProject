@@ -1,56 +1,127 @@
 let btnchart = document.querySelectorAll(".btnchart");
 let productCount = document.getElementById("productCount");
 let productUsd = document.getElementById("productUsd");
+let btnchartminus = document.querySelectorAll(".btnchartminus");
+let btnchartplyus = document.querySelectorAll(".btnchartplyus");
+let btnchartprice = document.querySelectorAll(".btncahrtprice");
+
+
 
 btnchart.forEach(btn => {
     btn.addEventListener("click", function (ev) {
         ev.preventDefault();
         if (localStorage.getItem("basket") == null) {
-            localStorage.setItem("basket", JSON.stringify([]));            
+            localStorage.setItem("basket", JSON.stringify([]));
         }
-        
-        let arr = JSON.parse(localStorage.getItem("basket"));               
-        let productId = this.parentElement.getAttribute("data-id");
+        this.classList.add("d-none");
+        this.nextElementSibling.classList.remove("d-none");
+
+        let arr = JSON.parse(localStorage.getItem("basket"));
+        let productId = this.parentElement.parentElement.getAttribute("data-id");
         let existProductId = arr.find(p => p.id == productId);
+
         if (existProductId == undefined) {
             arr.push({
                 id: productId,
-                price: this.previousElementSibling.firstElementChild.firstElementChild.innerText,
-                imageUrl: this.parentElement.firstElementChild.getAttribute("src"),
-                name: this.parentElement.firstElementChild.innerText,
+                price: this.parentElement.previousElementSibling.firstElementChild.firstElementChild.innerText,
+                imageUrl: this.parentElement.parentElement.firstElementChild.getAttribute("src"),
+                name: this.parentElement.parentElement.firstElementChild.innerText,
                 count: 1
-
             })
         }
-        else{
+        else {
             existProductId.count++;
+            btnchartprice.forEach(bt => {
+                if (bt.parentElement.parentElement.parentElement.getAttribute("data-id") == productId) {
+                    bt.innerText = existProductId.count
+                }
+            })
         }
-       
-        localStorage.setItem("basket",JSON.stringify(arr));
+        localStorage.setItem("basket", JSON.stringify(arr));
         WriteProductCount();
-    })
+    });
+    btn.parentElement.parentElement.onmouseover = function () {
+        let arr = JSON.parse(localStorage.getItem("basket"));
+        let productId = this.getAttribute("data-id");
+        let existProductId = arr.find(p => p.id == productId);
+        if (existProductId != undefined) {
+            if (existProductId.count > 0) {
+                btn.classList.add("d-none");
+                btn.nextElementSibling.classList.remove("d-none");
+                btn.nextElementSibling.children.item(1).innerText = existProductId.count;
+
+            }
+            else {
+                btn.classList.remove("d-none");
+                btn.nextElementSibling.classList.add("d-none");
+            }
+        }
+
+        localStorage.setItem("basket", JSON.stringify(arr));
+        WriteProductCount();
+    }
+
 })
 
-function WriteProductCount(){
-    if(localStorage.getItem("basket")!=null){
-        let arr=JSON.parse(localStorage.getItem("basket"));
-        let totalCount=0;
-        
-        arr.map(product=>{
-            totalCount+=product.count;    
-            
-        })
-        productCount.innerText=totalCount;
+if (localStorage.getItem("basket") != null) {
+    let arr = JSON.parse(localStorage.getItem("basket"));
+    arr.forEach(product => {
+        if (product.count == 0) {
 
-        let totalPrice=0;        
-        arr.forEach(product=>{
-            totalPrice+=product.count* parseFloat(product.price);
+        }
+        else {
+            btnchartminus.forEach(minus => {
+                //let arr = JSON.parse(localStorage.getItem("basket"));
+
+                minus.onclick = function () {
+                    let productId = this.parentElement.parentElement.parentElement.getAttribute("data-id");
+                    let existProductId = arr.find(p => p.id == productId);
+                    product.count--;
+                    console.log(existProductId);
+                    existProductId.count--;
+                    if (product.count == 0) {
+                        productUsd -= parseFloat(product.price);
+
+                    } else {
+                        productUsd -= parseFloat(product.price);
+
+                    }
+                    btnchartprice.forEach(bt => {
+                        if (bt.parentElement.parentElement.parentElement.getAttribute("data-id") == existProductId.id) {
+                            bt.innerText = existProductId.count;
+                            console.log(bt);
+                        }
+                    })
+                    localStorage.setItem("basket", JSON.stringify(arr));
+                    WriteProductCount();
+                }
+            })
+
+        }
+    })
+};
+
+
+
+function WriteProductCount() {
+    if (localStorage.getItem("basket") != null) {
+        let arr = JSON.parse(localStorage.getItem("basket"));
+        let totalCount = 0;
+        arr.map(product => {
+            totalCount += product.count;
         })
-        console.log(totalPrice);
-        productUsd.innerText=totalPrice
+        productCount.innerText = totalCount;
+        let totalPrice = 0;
+        arr.forEach(product => {
+            totalPrice += product.count * parseFloat(product.price);
+        })
+
+        productUsd.innerText = totalPrice
+        localStorage.setItem("basket", JSON.stringify(arr));
     }
 }
 WriteProductCount();
+
 $(document).ready(function () {
     $(".location").click(function () {
         swal({

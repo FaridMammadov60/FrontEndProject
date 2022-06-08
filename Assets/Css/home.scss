@@ -184,9 +184,9 @@
                 text-decoration: none;
             }
 
-            .right-basket-basket {                
+            .right-basket-basket {
 
-                #basket-icon {                    
+                #basket-icon {
                     border-radius: 50%;
                     background-color: rgb(255, 241, 238);
                     font-size: 20px;
@@ -197,8 +197,8 @@
                 }
 
                 #productCount {
-                    
-                    border-radius: 50%;                    
+
+                    border-radius: 50%;
                     background-color: red;
                     color: white;
                     width: 20px;
@@ -584,16 +584,50 @@ main {
                             img {
                                 width: 100%;
                             }
-
-                           
-                        }
-                        .deadlineSection-cart:hover {
-                            
-                            button{
-                                display: block !important;                                
+                            .btnchartbtn {
+                                .btnchart {
+                                    width: 200px;                                    
+                                }
+                                .btnchartdiv {
+                                    width: 200px;                               
+    
+                                    .btnchartminus {
+                                        width: 30px;
+                                        background-color: gray;
+                                        display: inline-block !important;
+                                        border-top-left-radius: 50%;
+                                        border-bottom-left-radius: 50%;
+                                    }
+    
+                                    .btnchartplyus {
+                                        width: 30px;
+                                        background-color: rgb(255, 205, 0);
+                                        display: inline-block !important;
+                                        border-top-right-radius: 50%;
+                                        border-bottom-right-radius: 50%;
+                                        border: ridge;
+                                    }
+    
+                                    .btncahrtprice {
+                                        display: inline-block !important;
+                                        width: 120px;
+                                        text-align: center;
+                                        border: ridge;
+                                    }
+                                }
                             }
+    
 
                         }
+
+                        .deadlineSection-cart:hover {
+                            .btnchartbtn {
+                                margin-bottom: 5px;
+                                display: block !important;
+                                position: absolute;
+                            }
+                        }       
+
                     }
                 }
             }

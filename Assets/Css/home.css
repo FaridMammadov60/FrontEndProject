@@ -551,8 +551,42 @@ main .deadlineSection #deadline .categories .rightSide .product .content img {
   width: 100%;
 }
 
-main .deadlineSection #deadline .categories .rightSide .product .deadlineSection-cart:hover button {
+main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchart {
+  width: 200px;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchartdiv {
+  width: 200px;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchartdiv .btnchartminus {
+  width: 30px;
+  background-color: gray;
+  display: inline-block !important;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchartdiv .btnchartplyus {
+  width: 30px;
+  background-color: #ffcd00;
+  display: inline-block !important;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: ridge;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchartdiv .btncahrtprice {
+  display: inline-block !important;
+  width: 120px;
+  text-align: center;
+  border: ridge;
+}
+
+main .deadlineSection #deadline .categories .rightSide .product .deadlineSection-cart:hover .btnchartbtn {
+  margin-bottom: 5px;
   display: block !important;
+  position: absolute;
 }
 
 .weekendDiscountSection .side {
