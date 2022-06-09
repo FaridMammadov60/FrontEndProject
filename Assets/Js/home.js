@@ -80,10 +80,10 @@ if (localStorage.getItem("basket") != null) {
                     console.log(existProductId);
                     existProductId.count--;
                     if (product.count == 0) {
-                        productUsd -= parseFloat(product.price);
+                        productUsd -= parseInt(product.price);
 
                     } else {
-                        productUsd -= parseFloat(product.price);
+                        productUsd -= parseInt(product.price);
 
                     }
                     btnchartprice.forEach(bt => {
@@ -113,7 +113,7 @@ function WriteProductCount() {
         productCount.innerText = totalCount;
         let totalPrice = 0;
         arr.forEach(product => {
-            totalPrice += product.count * parseFloat(product.price);
+            totalPrice += product.count * parseInt(product.price);
         })
 
         productUsd.innerText = totalPrice
