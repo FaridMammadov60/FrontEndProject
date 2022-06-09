@@ -131,6 +131,23 @@ $(document).ready(function () {
 
     // deadline start
 
+
+    //wishlist
+    let heartIcon = document.querySelectorAll(".heart")
+    heartIcon.forEach(heart => {
+        heart.onclick = function () {
+            if (this.classList.contains("bxs-heart")) {
+                this.classList.remove("bxs-heart")
+                this.classList.add("bx-heart")
+            }
+            else {
+                this.classList.remove("bx-heart")
+                this.classList.add("bxs-heart")
+            }
+        }
+    })
+
+    //wishlist end
     $('#deadline').countdown('2022/8/12', function (event) {
 
         // $('#days').html(event.strftime(''
@@ -191,10 +208,9 @@ $(document).ready(function () {
 
     // deadline end
 
+
+
 })
-
-
-
 
 //  Carousel Section Start
 
@@ -311,8 +327,9 @@ try {
         var carbonScript = document.createElement("script");
         carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
         carbonScript.id = "_carbonads_js";
-        document.getElementById("carbon-block").appendChild(carbonScript);
+        // document.getElementById("carbon-block").appendChild(carbonScript);
     });
 } catch (error) {
     console.log(error);
 }
+// product carousel end
