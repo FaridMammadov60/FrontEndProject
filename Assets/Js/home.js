@@ -62,7 +62,8 @@ btnchart.forEach(btn => {
         btnchartminus.forEach(minus => {
             minus.addEventListener("click", function () {
                 if (existProductId2.count == 0) {
-
+                    
+                    localStorage.removeItem("data-id",existProductId2.id);
                 }
                 else {
                     existProductId2.count--;
