@@ -72,115 +72,110 @@
   color: #2bbef9;
 }
 
-.headers .header-row2 .bacola-img {
-  padding-left: 40px;
+.headers .header-row2 .third-nav {
+  padding: 24px 0;
+  padding-left: 9%;
+  display: inline;
 }
 
-.headers .header-row2 .bacola-img .bacola-iconalt {
-  font-size: .6875rem;
+.headers .header-row2 .third-nav img {
+  width: 160px;
+}
+
+.headers .header-row2 .third-nav .logoTitle {
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 0.5;
 }
 
-.headers .header-row2 .location-heads {
-  padding-left: 40px;
+.headers .header-row2 .third-nav .location {
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  padding: 8px 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  margin-top: 8px;
 }
 
-.headers .header-row2 .location-heads .location-head {
-  width: 150px;
-  border-color: black;
-  border: ridge;
-  display: inline-block;
-  border-radius: 5px;
+.headers .header-row2 .third-nav .location .title {
+  font-size: 11px;
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headers .header-row2 .third-nav .location .content {
+  color: #233a95ff;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headers .header-row2 .third-nav .searchProduct {
+  margin-top: 10px;
+  position: relative;
+}
+
+.headers .header-row2 .third-nav .searchProduct i {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 30px;
+}
+
+.headers .header-row2 .third-nav .searchProduct input {
+  width: 100%;
+  padding: 15px 20px;
+  background: #f4f4f4;
+  border: none;
+  border-radius: 10px;
+}
+
+.headers .header-row2 .third-nav .searchProduct input:focus {
+  outline: none;
+}
+
+.headers .header-row2 .third-nav .right-third-nav {
+  padding: 15px 15px;
+}
+
+.headers .header-row2 .third-nav .right-third-nav .userIcon i {
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+
+.headers .header-row2 .third-nav .right-third-nav .basket {
+  margin-top: -15px;
   cursor: pointer;
 }
 
-.headers .header-row2 .location-heads .location-head .location-span {
-  display: block;
-  font-size: .625rem;
-  opacity: 0.5;
-  text-decoration: none;
-  color: black;
+.headers .header-row2 .third-nav .right-third-nav .basket .price {
+  margin-top: -15px;
 }
 
-.headers .header-row2 .location-heads .location-head .location-div {
-  display: inline;
-  text-decoration: none;
-  color: #233a95;
-}
-
-.headers .header-row2 .location-heads .location-head i {
-  padding-left: 5px;
-}
-
-.headers .header-row2 .location-heads .head-search {
-  display: inline-block;
+.headers .header-row2 .third-nav .right-third-nav .basket .basketIcon {
+  font-size: 30px;
+  color: red;
+  background: #fff1eeff;
+  border-radius: 50%;
+  padding: 10px;
   position: relative;
-  padding-left: 40px;
-  font-weight: 400;
-  width: 600px;
 }
 
-.headers .header-row2 .location-heads .head-search #head-search-input {
+.headers .header-row2 .third-nav .right-third-nav .basket .basketIcon .count {
   position: absolute;
-  font-size: .9375rem;
-  height: 60px;
-  display: inline;
-  opacity: 0.5;
-  background-color: #f3f4f7;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  top: -50px;
-}
-
-.headers .header-row2 .location-heads .head-search i {
-  display: inline;
-  position: absolute;
-  right: 10px;
-  top: -30px;
-  font-size: 20px;
-}
-
-.headers .header-row2 .right-basket div {
-  display: inline;
-}
-
-.headers .header-row2 .right-basket .right-basket-user {
-  width: 40px;
-  border: ridge;
-  border-color: black;
+  font-size: 15px;
   border-radius: 50%;
-}
-
-.headers .header-row2 .right-basket .right-basket-user i {
-  font-size: 18px;
-  color: black !important;
-  padding: 5px;
-}
-
-.headers .header-row2 .right-basket .right-basket-usd {
-  padding-left: 15px;
-  color: black !important;
-  text-decoration: none;
-}
-
-.headers .header-row2 .right-basket .right-basket-basket #basket-icon {
-  border-radius: 50%;
-  background-color: #fff1ee;
-  font-size: 20px;
-  padding-left: 15px;
-  width: 50px;
-  height: 40px;
-  color: black !important;
-}
-
-.headers .header-row2 .right-basket .right-basket-basket #productCount {
-  border-radius: 50%;
-  background-color: red;
+  padding: 2px 5px;
+  background: red;
   color: white;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
+  right: -5px;
+  top: -2px;
 }
 
 .headers .header-row3 .categories {

@@ -87,129 +87,108 @@
     }
 
     .header-row2 {
-        .bacola-img {
-            padding-left: 40px;
-
-            .bacola-iconalt {
-                font-size: .6875rem;
-                opacity: 0.5;
+        .third-nav {
+            padding: 24px 0;
+            padding-left: 9%;
+            display: inline;
+    
+            img {
+              width: 160px;
             }
-        }
-
-        .location-heads {
-            padding-left: 40px;
-
-            .location-head {
-                width: 150px;
-                border-color: black;
-                border: ridge;
-                display: inline-block;
-                border-radius: 5px;
+    
+            .logoTitle {
+              font-size: 11px;
+              display: flex;
+              opacity: 0.5;
+            }
+    
+            .location {
+              border: 1px solid rgb(205, 205, 205);
+              border-radius: 10px;
+              padding: 8px 15px;
+              flex-direction: column;
+              cursor: pointer;
+              margin-top: 8px;
+    
+              .title {
+                font-size: 11px;
+                opacity: 0.8;
+                font-family: Arial, Helvetica, sans-serif;
+              }
+    
+              .content {
+                color: #233a95ff;
+                font-weight: 700;
+                font-family: Arial, Helvetica, sans-serif;
+              }
+            }
+    
+            .searchProduct {
+              margin-top: 10px;
+              position: relative;
+    
+              i {
+                position: absolute;
+                top: 15px;
+                right: 25px;
+                font-size: 30px;
+              }
+    
+              input {
+                width: 100%;
+                padding: 15px 20px;
+                background: rgb(244, 244, 244);
+                border: none;
+                border-radius: 10px;
+    
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+    
+            .right-third-nav {
+              padding: 15px 15px;
+    
+              .userIcon {
+                i {
+                  border: 1px solid grey;
+                  border-radius: 50%;
+                  padding: 10px 12px;
+                  font-size: 20px;
+                }
+              }
+    
+              .basket {
+                margin-top: -15px;
                 cursor: pointer;
-
-                .location-span {
-                    display: block;
-                    font-size: .625rem;
-                    opacity: 0.5;
-                    text-decoration: none;
-                    color: black;
+    
+                .price {
+                  margin-top: -15px;
                 }
-
-                .location-div {
-                    display: inline;
-                    text-decoration: none;
-                    color: rgb(35, 58, 149);
-                }
-
-                i {
-                    padding-left: 5px;
-                }
-
-            }
-
-            .head-search {
-                display: inline-block;
-                position: relative;
-                padding-left: 40px;
-                font-weight: 400;
-                width: 600px;
-
-                #head-search-input {
+    
+                .basketIcon {
+                  font-size: 30px;
+                  color: red;
+                  background: #fff1eeff;
+                  border-radius: 50%;
+                  padding: 10px;
+                  position: relative;
+    
+                  .count {
                     position: absolute;
-                    font-size: .9375rem;
-                    height: 60px;
-                    display: inline;
-                    opacity: 0.5;
-                    background-color: rgb(243, 244, 247);
-                    padding-bottom: 10px;
-                    margin-bottom: 10px;
-                    top: -50px;
-
-                }
-
-                i {
-                    display: inline;
-                    position: absolute;
-                    right: 10px;
-                    top: -30px;
-                    font-size: 20px;
-                }
-            }
-        }
-
-
-
-        .right-basket {
-            div {
-                display: inline;
-            }
-
-            .right-basket-user {
-                width: 40px;
-                border: ridge;
-                border-color: black;
-                border-radius: 50%;
-
-                i {
-                    font-size: 18px;
-                    color: black !important;
-                    padding: 5px;
-                }
-
-            }
-
-            .right-basket-usd {
-                padding-left: 15px;
-                color: black !important;
-                text-decoration: none;
-            }
-
-            .right-basket-basket {
-
-                #basket-icon {
+                    font-size: 15px;
                     border-radius: 50%;
-                    background-color: rgb(255, 241, 238);
-                    font-size: 20px;
-                    padding-left: 15px;
-                    width: 50px;
-                    height: 40px;
-                    color: black !important;
-                }
-
-                #productCount {
-
-                    border-radius: 50%;
-                    background-color: red;
+                    padding: 2px 5px;
+                    background: red;
                     color: white;
-                    width: 20px;
-                    text-align: center;
-                    text-decoration: none;
-                    font-size: 20px;
+                    right: -5px;
+                    top: -2px;
+                  }
                 }
+              }
             }
-
-
-        }
+          }
 
     }
 
