@@ -36,35 +36,50 @@ btnchart.forEach(btn => {
                 }
             })
         }
-        btnchartplyus.onclick = function () {
-            product.count++;
-            tdcount.innerText = product.count;
 
-            tdcount.append(btnplyus);
-            tdcount.prepend(btnminus);
-            tdsubtotal.innerText = product.count * product.price;
-
-            sumTotalPrice += parseFloat(product.price);
-            totalPrice.innerText = sumTotalPrice;
-
-            localStorage.setItem("basket", JSON.stringify(arr));
-            WriteProductCount();
-        }
-        
         localStorage.setItem("basket", JSON.stringify(arr));
         WriteProductCount();
     });
 
-    btn.parentElement.parentElement.onmouseover = function () {
+    btn.parentElement.parentElement.onmouseover = function (ev) {
+        ev.preventDefault();
+        if (localStorage.getItem("basket") == null) {
+            localStorage.setItem("basket", JSON.stringify([]));
+        }
         let arr = JSON.parse(localStorage.getItem("basket"));
         let productId = this.getAttribute("data-id");
-        let existProductId = arr.find(p => p.id == productId);
-        console.log(existProductId);
-        if (existProductId != undefined) {
-            if (existProductId.count > 0) {
+        let existProductId2 = arr.find(p => p.id == productId);
+
+        btnchartplyus.forEach(plus => {
+            plus.addEventListener("click", function () {
+                existProductId2.count++;
+                btn.nextElementSibling.children.item(1).innerText = existProductId2.count;
+
+                localStorage.setItem("basket", JSON.stringify(arr));
+                WriteProductCount();
+            })
+        })
+        btnchartminus.forEach(minus => {
+            minus.addEventListener("click", function () {
+                if (existProductId2.count == 0) {
+
+                }
+                else {
+                    existProductId2.count--;
+                    btn.nextElementSibling.children.item(1).innerText = existProductId2.count;
+                }
+
+                localStorage.setItem("basket", JSON.stringify(arr));
+                WriteProductCount();
+            })
+        })
+
+
+        if (existProductId2 != undefined) {
+            if (existProductId2.count > 0) {
                 btn.classList.add("d-none");
                 btn.nextElementSibling.classList.remove("d-none");
-                btn.nextElementSibling.children.item(1).innerText = existProductId.count;
+                btn.nextElementSibling.children.item(1).innerText = existProductId2.count;
 
             }
             else {
@@ -72,6 +87,7 @@ btnchart.forEach(btn => {
                 btn.nextElementSibling.classList.add("d-none");
             }
         }
+
 
         localStorage.setItem("basket", JSON.stringify(arr));
         WriteProductCount();
@@ -101,6 +117,10 @@ function WriteProductCount() {
     }
 }
 WriteProductCount();
+
+
+
+
 
 $(document).ready(function () {
     $(".location").click(function () {
