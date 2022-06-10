@@ -9,6 +9,7 @@ let btnchartprice = document.querySelectorAll(".btncahrtprice");
 btnchart.forEach(btn => {
     btn.addEventListener("click", function (ev) {
         ev.preventDefault();
+
         if (localStorage.getItem("basket") == null) {
             localStorage.setItem("basket", JSON.stringify([]));
         }
@@ -36,6 +37,14 @@ btnchart.forEach(btn => {
                 }
             })
         }
+        if (existProductId.count == 0) {
+            this.classList.remove("d-none");
+            this.nextElementSibling.classList.add("d-none");
+        }
+        else {
+            this.classList.add("d-none");
+            this.nextElementSibling.classList.remove("d-none");
+        }
 
         localStorage.setItem("basket", JSON.stringify(arr));
         WriteProductCount();
@@ -62,12 +71,22 @@ btnchart.forEach(btn => {
         btnchartminus.forEach(minus => {
             minus.addEventListener("click", function () {
                 if (existProductId2.count == 0) {
-                    
-                    localStorage.removeItem("data-id",existProductId2.id);
+                    let findarr = arr.filter(n => n.count > 0)
+                    let newarr = [...findarr];
+                    arr = newarr;
+
                 }
                 else {
                     existProductId2.count--;
                     btn.nextElementSibling.children.item(1).innerText = existProductId2.count;
+                }
+                if (existProductId2.count == 0) {
+                    btn.classList.remove("d-none");
+                    btn.nextElementSibling.classList.add("d-none");
+                }
+                else {
+                    btn.classList.add("d-none");
+                    btn.nextElementSibling.classList.remove("d-none");
                 }
 
                 localStorage.setItem("basket", JSON.stringify(arr));

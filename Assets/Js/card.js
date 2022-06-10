@@ -1,9 +1,9 @@
 let table = document.getElementById("table")
 let rtnBtn = document.getElementById("rtnBtn")
 let productCount = document.getElementById("productCount");
-let totalPrice = document.getElementById("productUsd")
+let totalPrice = document.getElementById("productUsd");
 let sumTotalPrice = 0;
-rtnBtn.classList.remove("d-none")
+rtnBtn.classList.remove("d-none");
 
 if (localStorage.getItem("basket") != null) {
     let arr = JSON.parse(localStorage.getItem("basket"));
