@@ -6,7 +6,6 @@ let btnchartplyus = document.querySelectorAll(".btnchartplyus");
 let btnchartprice = document.querySelectorAll(".btncahrtprice");
 
 
-
 btnchart.forEach(btn => {
     btn.addEventListener("click", function (ev) {
         ev.preventDefault();
@@ -37,13 +36,30 @@ btnchart.forEach(btn => {
                 }
             })
         }
+        btnchartplyus.onclick = function () {
+            product.count++;
+            tdcount.innerText = product.count;
+
+            tdcount.append(btnplyus);
+            tdcount.prepend(btnminus);
+            tdsubtotal.innerText = product.count * product.price;
+
+            sumTotalPrice += parseFloat(product.price);
+            totalPrice.innerText = sumTotalPrice;
+
+            localStorage.setItem("basket", JSON.stringify(arr));
+            WriteProductCount();
+        }
+        
         localStorage.setItem("basket", JSON.stringify(arr));
         WriteProductCount();
     });
+
     btn.parentElement.parentElement.onmouseover = function () {
         let arr = JSON.parse(localStorage.getItem("basket"));
         let productId = this.getAttribute("data-id");
         let existProductId = arr.find(p => p.id == productId);
+        console.log(existProductId);
         if (existProductId != undefined) {
             if (existProductId.count > 0) {
                 btn.classList.add("d-none");
@@ -63,43 +79,7 @@ btnchart.forEach(btn => {
 
 })
 
-if (localStorage.getItem("basket") != null) {
-    let arr = JSON.parse(localStorage.getItem("basket"));
-    arr.forEach(product => {
-        if (product.count == 0) {
 
-        }
-        else {
-            btnchartminus.forEach(minus => {
-                //let arr = JSON.parse(localStorage.getItem("basket"));
-
-                minus.onclick = function () {
-                    let productId = this.parentElement.parentElement.parentElement.getAttribute("data-id");
-                    let existProductId = arr.find(p => p.id == productId);
-                    product.count--;
-                    console.log(existProductId);
-                    existProductId.count--;
-                    if (product.count == 0) {
-                        productUsd -= parseInt(product.price);
-
-                    } else {
-                        productUsd -= parseInt(product.price);
-
-                    }
-                    btnchartprice.forEach(bt => {
-                        if (bt.parentElement.parentElement.parentElement.getAttribute("data-id") == existProductId.id) {
-                            bt.innerText = existProductId.count;
-                            console.log(bt);
-                        }
-                    })
-                    localStorage.setItem("basket", JSON.stringify(arr));
-                    WriteProductCount();
-                }
-            })
-
-        }
-    })
-};
 
 
 
