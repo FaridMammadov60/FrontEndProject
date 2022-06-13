@@ -383,13 +383,13 @@
   color: #2BC7FBFF;
 }
 
-main .carouselSection {
+main .mainCarouselSection {
   margin-top: -26.5px;
   width: 100%;
   position: relative;
 }
 
-main .carouselSection #prev {
+main .mainCarouselSection #prev {
   position: absolute;
   left: 3% !important;
   top: 50%;
@@ -403,12 +403,12 @@ main .carouselSection #prev {
   opacity: 1 !important;
 }
 
-main .carouselSection #prev #l {
+main .mainCarouselSection #prev #l {
   font-size: 20px;
   color: black !important;
 }
 
-main .carouselSection #next {
+main .mainCarouselSection #next {
   position: absolute;
   right: 3% !important;
   top: 50%;
@@ -422,18 +422,18 @@ main .carouselSection #next {
   opacity: 1;
 }
 
-main .carouselSection #next #r {
+main .mainCarouselSection #next #r {
   font-size: 20px;
   color: black !important;
 }
 
-main .carouselSection .item {
+main .mainCarouselSection .item {
   position: relative;
   cursor: pointer;
   width: 100%;
 }
 
-main .carouselSection .item .content {
+main .mainCarouselSection .item .content {
   cursor: pointer;
   position: absolute;
   left: 10%;
@@ -442,41 +442,41 @@ main .carouselSection .item .content {
   width: 30%;
 }
 
-main .deadlineSection #deadline .categories .leftSide {
+main .main-deadlineSection #deadline .categories .leftSide {
   width: 30%;
   height: 740px;
   border: 2px solid red;
   border-radius: 10px;
 }
 
-main .deadlineSection #deadline .categories .leftSide .content h5 {
+main .main-deadlineSection #deadline .categories .leftSide .content h5 {
   color: #2372C1FF;
 }
 
-main .deadlineSection #deadline .categories .leftSide .content .name {
+main .main-deadlineSection #deadline .categories .leftSide .content .name {
   font-size: 20px;
   margin: 5px 0;
 }
 
-main .deadlineSection #deadline .categories .leftSide .content p img {
+main .main-deadlineSection #deadline .categories .leftSide .content p img {
   width: 100px;
 }
 
-main .deadlineSection #deadline .categories .leftSide .content div {
+main .main-deadlineSection #deadline .categories .leftSide .content div {
   width: 20px;
 }
 
-main .deadlineSection #deadline .categories .leftSide .content div :first-child {
+main .main-deadlineSection #deadline .categories .leftSide .content div :first-child {
   font-size: 16px;
 }
 
-main .deadlineSection #deadline .categories .leftSide .content div span {
+main .main-deadlineSection #deadline .categories .leftSide .content div span {
   margin-top: 12px;
   size: 20px;
   font-weight: 600;
 }
 
-main .deadlineSection #deadline .categories .leftSide .content .time {
+main .main-deadlineSection #deadline .categories .leftSide .content .time {
   width: 100px;
   margin: 0 10px;
   padding: 15px;
@@ -486,7 +486,7 @@ main .deadlineSection #deadline .categories .leftSide .content .time {
   border-radius: 10px;
 }
 
-main .deadlineSection #deadline .categories .rightSide {
+main .main-deadlineSection #deadline .categories .rightSide {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 30px;
@@ -494,160 +494,69 @@ main .deadlineSection #deadline .categories .rightSide {
   border-radius: 10px;
 }
 
-main .deadlineSection #deadline .categories .rightSide .product {
+main .main-deadlineSection #deadline .categories .rightSide .product {
   border: 0.5px solid #d6d6d6;
 }
 
-main .deadlineSection #deadline .categories .rightSide .product .content {
-  padding: 25px;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .content p {
-  width: 90%;
-  margin: 0 !important;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .content p img {
-  width: 40%;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .content strong {
-  font-size: 10px;
-  font-weight: 700;
-  color: #2FC573FF;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .content img {
-  width: 100%;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchart {
-  width: 200px;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchartdiv {
-  width: 200px;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchartdiv .btnchartminus {
-  width: 30px;
-  background-color: gray;
-  display: inline-block !important;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchartdiv .btnchartplyus {
-  width: 30px;
-  background-color: #ffcd00;
-  display: inline-block !important;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border: ridge;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .content .btnchartbtn .btnchartdiv .btncahrtprice {
-  display: inline-block !important;
-  width: 120px;
-  text-align: center;
-  border: ridge;
-}
-
-main .deadlineSection #deadline .categories .rightSide .product .deadlineSection-cart:hover .btnchartbtn {
-  margin-bottom: 5px;
-  display: block !important;
-  position: absolute;
-}
-
-.weekendDiscountSection .side {
-  position: relative;
-}
-
-.weekendDiscountSection .side img {
-  width: 97%;
-  border-radius: 10px;
-}
-
-.weekendDiscountSection .side .content {
-  position: absolute;
-  top: 15%;
-  left: 5%;
-}
-
-.weekendDiscountSection .side .content h6 {
-  color: red;
-  font-weight: 400;
-}
-
-.carouselProductSection > div {
-  margin-left: 10.5%;
-}
-
-.carouselProductSection .product {
-  border: 0.5px solid #d6d6d6;
-}
-
-.carouselProductSection .product .content {
+main .main-deadlineSection #deadline .categories .rightSide .product .content {
   padding: 15px 25px;
   cursor: pointer;
   position: relative;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  height: 426px;
 }
 
-.carouselProductSection .product .content:hover {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover {
   position: absolute;
   padding: 15px 25px;
+  width: 18.8%;
   z-index: 5;
-  max-height: 426px;
   background: white;
   border: 1px solid grey;
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
           box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.carouselProductSection .product .content:hover .discount {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover .discount {
   top: 4.2%;
   padding: 5px 15px;
 }
 
-.carouselProductSection .product .content:hover .offer {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover .offer {
   top: 13%;
   padding: 5px 15px;
 }
 
-.carouselProductSection .product .content:hover .type {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover .type {
   top: 13%;
   padding: 5px 15px;
 }
 
-.carouselProductSection .product .content:hover .minimize {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover .minimize {
   right: 8.5%;
   visibility: visible;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
 
-.carouselProductSection .product .content:hover .heart {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover .heart {
   right: 8%;
   visibility: visible;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
 }
 
-.carouselProductSection .product .content:hover button {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover button {
   display: block;
 }
 
-.carouselProductSection .product .content:hover .prodCount {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover .prodCount {
   display: none;
   position: relative;
   text-align: center;
-  top: 15px;
 }
 
-.carouselProductSection .product .content:hover .prodCount :last-child {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover .prodCount :last-child {
   right: 10%;
   position: absolute;
   font-size: 20px;
@@ -658,7 +567,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   border: none;
 }
 
-.carouselProductSection .product .content:hover .prodCount :first-child {
+main .main-deadlineSection #deadline .categories .rightSide .product .content:hover .prodCount :first-child {
   position: absolute;
   left: 10%;
   font-size: 20px;
@@ -669,7 +578,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   border: none;
 }
 
-.carouselProductSection .product .content i {
+main .main-deadlineSection #deadline .categories .rightSide .product .content i {
   position: absolute;
   visibility: hidden;
   top: 12%;
@@ -680,7 +589,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
-.carouselProductSection .product .content .discount {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .discount {
   position: absolute;
   top: 5%;
   font-size: 11px;
@@ -691,7 +600,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   background-color: #2BBEF9FF;
 }
 
-.carouselProductSection .product .content .offer {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .offer {
   position: absolute;
   top: 15%;
   font-size: 10px;
@@ -702,7 +611,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   background-color: #71778EFF;
 }
 
-.carouselProductSection .product .content .type {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .type {
   position: absolute;
   top: 15%;
   font-size: 10px;
@@ -713,64 +622,66 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   background-color: #E5F8EDFF;
 }
 
-.carouselProductSection .product .content .minimize {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .minimize {
   top: 5%;
   right: 5%;
 }
 
-.carouselProductSection .product .content .minimize:hover {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .minimize:hover {
   background-color: #233A95FF;
   color: white;
 }
 
-.carouselProductSection .product .content .heart {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .heart {
   top: 15%;
   right: 2%;
 }
 
-.carouselProductSection .product .content .heart:hover {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .heart:hover {
   background-color: #233A95FF;
   color: white;
 }
 
-.carouselProductSection .product .content p {
+main .main-deadlineSection #deadline .categories .rightSide .product .content p {
   width: 90%;
   margin: 0 !important;
 }
 
-.carouselProductSection .product .content p img {
-  width: 50% !important;
+main .main-deadlineSection #deadline .categories .rightSide .product .content p img {
+  width: 40%;
 }
 
-.carouselProductSection .product .content strong {
+main .main-deadlineSection #deadline .categories .rightSide .product .content strong {
   font-size: 10px;
   font-weight: 700;
   color: #2FC573FF;
 }
 
-.carouselProductSection .product .content img {
-  width: 30%;
+main .main-deadlineSection #deadline .categories .rightSide .product .content img {
+  width: 100%;
 }
 
-.carouselProductSection .product .content button {
+main .main-deadlineSection #deadline .categories .rightSide .product .content button {
   background: #233A95FF;
 }
 
-.carouselProductSection .product .content button,
-.carouselProductSection .product .content .prodCount {
+main .main-deadlineSection #deadline .categories .rightSide .product .content button,
+main .main-deadlineSection #deadline .categories .rightSide .product .content .prodCount {
   display: none;
-  padding: 5px 50px;
+  padding: 5px 60px;
   margin: 20px 10px 3px;
   border-radius: 10px;
 }
 
-.carouselProductSection .product .content .prodCount {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .prodCount {
   display: none;
   position: relative;
   text-align: center;
+  top: 10px;
+  padding-bottom: 28px;
 }
 
-.carouselProductSection .product .content .prodCount :last-child {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .prodCount :last-child {
   right: 10%;
   position: absolute;
   font-size: 20px;
@@ -781,7 +692,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   border: none;
 }
 
-.carouselProductSection .product .content .prodCount :first-child {
+main .main-deadlineSection #deadline .categories .rightSide .product .content .prodCount :first-child {
   position: absolute;
   left: 10%;
   font-size: 20px;
@@ -792,29 +703,262 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   border: none;
 }
 
-.extraPercent {
+main .main-weekend-DiscountSection .side {
+  position: relative;
+}
+
+main .main-weekend-DiscountSection .side img {
+  width: 97%;
+  border-radius: 10px;
+}
+
+main .main-weekend-DiscountSection .side .content {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+main .main-weekend-DiscountSection .side .content h6 {
+  color: red;
+  font-weight: 400;
+}
+
+main .carouselProductSection > div {
+  margin-left: 9.5%;
+}
+
+main .carouselProductSection .product {
+  border: 0.5px solid #d6d6d6;
+}
+
+main .carouselProductSection .product .content {
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  height: 426px;
+}
+
+main .carouselProductSection .product .content:hover {
+  position: absolute;
+  padding: 15px 25px;
+  z-index: 5;
+  max-height: 426px;
+  background: white;
+  border: 1px solid grey;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+main .carouselProductSection .product .content:hover .discount {
+  top: 4.2%;
+  padding: 5px 15px;
+}
+
+main .carouselProductSection .product .content:hover .offer {
+  top: 13%;
+  padding: 5px 15px;
+}
+
+main .carouselProductSection .product .content:hover .type {
+  top: 13%;
+  padding: 5px 15px;
+}
+
+main .carouselProductSection .product .content:hover .minimize {
+  right: 8.5%;
+  visibility: visible;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+main .carouselProductSection .product .content:hover .heart {
+  right: 8%;
+  visibility: visible;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+main .carouselProductSection .product .content:hover button {
+  display: block;
+}
+
+main .carouselProductSection .product .content:hover .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+  top: 15px;
+}
+
+main .carouselProductSection .product .content:hover .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
+  border: none;
+}
+
+main .carouselProductSection .product .content:hover .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
+}
+
+main .carouselProductSection .product .content i {
+  position: absolute;
+  visibility: hidden;
+  top: 12%;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+main .carouselProductSection .product .content .discount {
+  position: absolute;
+  top: 5%;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: #2BBEF9FF;
+}
+
+main .carouselProductSection .product .content .offer {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: #71778EFF;
+}
+
+main .carouselProductSection .product .content .type {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #198E4DFF;
+  background-color: #E5F8EDFF;
+}
+
+main .carouselProductSection .product .content .minimize {
+  top: 5%;
+  right: 5%;
+}
+
+main .carouselProductSection .product .content .minimize:hover {
+  background-color: #233A95FF;
+  color: white;
+}
+
+main .carouselProductSection .product .content .heart {
+  top: 15%;
+  right: 2%;
+}
+
+main .carouselProductSection .product .content .heart:hover {
+  background-color: #233A95FF;
+  color: white;
+}
+
+main .carouselProductSection .product .content p {
+  width: 90%;
+  margin: 0 !important;
+}
+
+main .carouselProductSection .product .content p img {
+  width: 50% !important;
+}
+
+main .carouselProductSection .product .content strong {
+  font-size: 10px;
+  font-weight: 700;
+  color: #2FC573FF;
+}
+
+main .carouselProductSection .product .content img {
+  width: 30%;
+}
+
+main .carouselProductSection .product .content button {
+  background: #233A95FF;
+}
+
+main .carouselProductSection .product .content button,
+main .carouselProductSection .product .content .prodCount {
+  display: none;
+  padding: 5px 50px;
+  margin: 20px 10px 3px;
+  border-radius: 10px;
+}
+
+main .carouselProductSection .product .content .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+main .carouselProductSection .product .content .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
+  border: none;
+}
+
+main .carouselProductSection .product .content .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
+}
+
+main .extraPercent {
   background-color: #FBEACFFF;
 }
 
-.extraPercent :first-child :first-child {
+main .extraPercent :first-child :first-child {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.extraPercent :first-child :first-child h2 {
+main .extraPercent :first-child :first-child h2 {
   padding: 15px 0;
 }
 
-.extraProductSection > div {
-  margin: 11%;
+main .extraProductSection > div {
+  margin: 0 11%;
   width: 80%;
 }
 
-.extraProductSection > div .product {
+main .extraProductSection > div .product {
   width: 20%;
 }
 
-.extraProductSection > div .product .content {
+main .extraProductSection > div .product .content {
   padding: 15px 25px;
   cursor: pointer;
   position: relative;
@@ -824,7 +968,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   margin: 0 -12px;
 }
 
-.extraProductSection > div .product .content:hover {
+main .extraProductSection > div .product .content:hover {
   position: absolute;
   padding: 15px 25px;
   width: 15.7%;
@@ -836,40 +980,40 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
           box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.extraProductSection > div .product .content:hover .discount {
+main .extraProductSection > div .product .content:hover .discount {
   top: 4.2%;
   padding: 5px 15px;
 }
 
-.extraProductSection > div .product .content:hover .offer {
+main .extraProductSection > div .product .content:hover .offer {
   top: 13%;
   padding: 5px 15px;
 }
 
-.extraProductSection > div .product .content:hover .type {
+main .extraProductSection > div .product .content:hover .type {
   top: 13%;
   padding: 5px 15px;
 }
 
-.extraProductSection > div .product .content:hover .minimize {
+main .extraProductSection > div .product .content:hover .minimize {
   right: 8.5%;
   visibility: visible;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
 
-.extraProductSection > div .product .content:hover .heart {
+main .extraProductSection > div .product .content:hover .heart {
   right: 8%;
   visibility: visible;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
 }
 
-.extraProductSection > div .product .content:hover button {
+main .extraProductSection > div .product .content:hover button {
   display: block;
 }
 
-.extraProductSection > div .product .content:hover .prodCount {
+main .extraProductSection > div .product .content:hover .prodCount {
   display: none;
   position: relative;
   text-align: center;
@@ -877,7 +1021,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   left: 15px;
 }
 
-.extraProductSection > div .product .content:hover .prodCount :last-child {
+main .extraProductSection > div .product .content:hover .prodCount :last-child {
   right: 10%;
   position: absolute;
   font-size: 20px;
@@ -888,7 +1032,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   border: none;
 }
 
-.extraProductSection > div .product .content:hover .prodCount :first-child {
+main .extraProductSection > div .product .content:hover .prodCount :first-child {
   position: absolute;
   left: 10%;
   font-size: 20px;
@@ -899,7 +1043,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   border: none;
 }
 
-.extraProductSection > div .product .content i {
+main .extraProductSection > div .product .content i {
   position: absolute;
   visibility: hidden;
   top: 12%;
@@ -910,7 +1054,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
-.extraProductSection > div .product .content .discount {
+main .extraProductSection > div .product .content .discount {
   position: absolute;
   top: 5%;
   font-size: 11px;
@@ -921,7 +1065,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   background-color: #2BBEF9FF;
 }
 
-.extraProductSection > div .product .content .offer {
+main .extraProductSection > div .product .content .offer {
   position: absolute;
   top: 15%;
   font-size: 10px;
@@ -932,7 +1076,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   background-color: #71778EFF;
 }
 
-.extraProductSection > div .product .content .type {
+main .extraProductSection > div .product .content .type {
   position: absolute;
   top: 15%;
   font-size: 10px;
@@ -943,58 +1087,58 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   background-color: #E5F8EDFF;
 }
 
-.extraProductSection > div .product .content .minimize {
+main .extraProductSection > div .product .content .minimize {
   top: 5%;
   right: 5%;
 }
 
-.extraProductSection > div .product .content .minimize:hover {
+main .extraProductSection > div .product .content .minimize:hover {
   background-color: #233A95FF;
   color: white;
 }
 
-.extraProductSection > div .product .content .heart {
+main .extraProductSection > div .product .content .heart {
   top: 15%;
   right: 2%;
 }
 
-.extraProductSection > div .product .content .heart:hover {
+main .extraProductSection > div .product .content .heart:hover {
   background-color: #233A95FF;
   color: white;
 }
 
-.extraProductSection > div .product .content p {
+main .extraProductSection > div .product .content p {
   width: 90%;
   margin: 0 !important;
 }
 
-.extraProductSection > div .product .content p img {
+main .extraProductSection > div .product .content p img {
   width: 70%;
 }
 
-.extraProductSection > div .product .content strong {
+main .extraProductSection > div .product .content strong {
   font-size: 10px;
   font-weight: 700;
   color: #2FC573FF;
 }
 
-.extraProductSection > div .product .content img {
+main .extraProductSection > div .product .content img {
   width: 100%;
 }
 
-.extraProductSection > div .product .content button {
+main .extraProductSection > div .product .content button {
   background: #233A95FF;
 }
 
-.extraProductSection > div .product .content button,
-.extraProductSection > div .product .content .prodCount {
+main .extraProductSection > div .product .content button,
+main .extraProductSection > div .product .content .prodCount {
   display: none;
   padding: 5px 25px;
   margin: 5px 10px 0px;
   border-radius: 10px;
 }
 
-.extraProductSection > div .product .content .prodCount {
+main .extraProductSection > div .product .content .prodCount {
   display: none;
   position: relative;
   text-align: center;
@@ -1003,7 +1147,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   bottom: 30px;
 }
 
-.extraProductSection > div .product .content .prodCount :last-child {
+main .extraProductSection > div .product .content .prodCount :last-child {
   right: 10%;
   position: absolute;
   font-size: 20px;
@@ -1014,7 +1158,7 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   border: none;
 }
 
-.extraProductSection > div .product .content .prodCount :first-child {
+main .extraProductSection > div .product .content .prodCount :first-child {
   position: absolute;
   left: 10%;
   font-size: 20px;
@@ -1025,32 +1169,45 @@ main .deadlineSection #deadline .categories .rightSide .product .deadlineSection
   border: none;
 }
 
-.lastSectionBody .lastSection {
+main .lastSectionBody .lastSection {
   margin-left: 10.5%;
 }
 
-.lastSectionBody .lastSection .product {
+main .lastSectionBody .lastSection .product {
   position: relative;
   margin-top: 40px;
+  border: none;
 }
 
-.lastSectionBody .lastSection .product img {
+main .lastSectionBody .lastSection .product .description p {
+  margin-top: 10px;
+  opacity: 0.4;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+main .lastSectionBody .lastSection .product .description h5 {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+main .lastSectionBody .lastSection .product img {
   width: 97%;
   border-radius: 10px;
 }
 
-.lastSectionBody .lastSection .product .content {
+main .lastSectionBody .lastSection .product .cont {
   position: absolute;
   top: 0;
   left: 0;
   padding: 35px 45px;
 }
 
-.lastSectionBody .lastSection .product .content h6 {
+main .lastSectionBody .lastSection .product .cont h6 {
   color: green;
 }
 
-.lastSectionBody .lastSection .product .content button {
+main .lastSectionBody .lastSection .product .cont button {
   color: white;
   background-color: #C2C2D3FF;
   border: none;
@@ -1570,6 +1727,36 @@ footer .contactBody .contact .contactNumb {
           box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
 }
 
+.shop .shopPage .rightSide .product .content:hover .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+  padding-bottom: 12px;
+  left: 15px;
+}
+
+.shop .shopPage .rightSide .product .content:hover .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
+  border: none;
+}
+
+.shop .shopPage .rightSide .product .content:hover .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
+}
+
 .shop .shopPage .rightSide .product .content:hover .minimize {
   right: 8.5%;
   visibility: visible;
@@ -1601,6 +1788,39 @@ footer .contactBody .contact .contactNumb {
   padding: 10px;
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 2px, rgba(17, 17, 26, 0.1) 0px 16px 4px;
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 2px, rgba(17, 17, 26, 0.1) 0px 16px 4px;
+}
+
+.shop .shopPage .rightSide .product .content .discount {
+  position: absolute;
+  top: 5%;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: #2BBEF9FF;
+}
+
+.shop .shopPage .rightSide .product .content .offer {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: #71778EFF;
+}
+
+.shop .shopPage .rightSide .product .content .type {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #198E4DFF;
+  background-color: #E5F8EDFF;
 }
 
 .shop .shopPage .rightSide .product .content .minimize {
@@ -1640,10 +1860,52 @@ footer .contactBody .contact .contactNumb {
   border-radius: 10px;
 }
 
+.shop .shopPage .rightSide .product .content .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+  padding-bottom: 12px;
+  left: 15px;
+}
+
+.shop .shopPage .rightSide .product .content .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
+  border: none;
+}
+
+.shop .shopPage .rightSide .product .content .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
+}
+
 .productBody {
   position: relative;
   background-color: #F7F8FDFF;
   margin-bottom: 50px;
+}
+
+.productBody h5 {
+  margin: 0 -4%;
+  background: #F7F8FDFF;
+  padding: 70px 50px 30px;
+}
+
+.productBody .header {
+  margin-left: 13%;
+  padding: 30px 0;
+  font-size: 14px;
 }
 
 .productBody .firstSection {
@@ -1658,7 +1920,7 @@ footer .contactBody .contact .contactNumb {
 
 .productBody .firstSection .leftPart .carousel-indicators .btns {
   position: absolute;
-  bottom: 110px;
+  bottom: 220px;
   left: 42px;
 }
 
@@ -1677,18 +1939,100 @@ footer .contactBody .contact .contactNumb {
 }
 
 .productBody .firstSection .middlePart {
-  margin-left: 15%;
+  margin-left: 12%;
   padding: 20px;
+  width: 370px;
+  position: relative;
+}
+
+.productBody .firstSection .middlePart .price {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: #D51243FF;
+}
+
+.productBody .firstSection .middlePart strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #198E4DFF;
+  background-color: #E5F8EDFF;
+  margin-bottom: 14px;
+}
+
+.productBody .firstSection .middlePart .minBtn,
+.productBody .firstSection .middlePart .plusBtn {
+  cursor: pointer;
+  padding: 10px 16px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.productBody .firstSection .middlePart .count {
+  margin: 0 10px;
+  width: 40px;
+}
+
+.productBody .firstSection .middlePart #productBtn {
+  padding: 10px 45px;
+  margin-left: 18px;
+  background: #233A95FF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.productBody .firstSection .middlePart input {
+  margin: 20px 48px;
+  border: none;
+  outline: none;
+}
+
+.productBody .firstSection .middlePart #errMes {
+  left: 55px;
+  top: 47%;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+}
+
+.productBody .firstSection .middlePart .reset {
+  padding: 10px 45px;
+  margin-left: 25px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.productBody .firstSection .middlePart .desc {
+  font-size: 14px;
+}
+
+.productBody .firstSection .rightPart {
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 25px;
 }
 
 .productBody .firstSection .rightPart p {
-  padding: 5px 20px;
+  padding: 8px 25px;
   background: #FFEEF2FF;
   color: #BE143CFF;
+  font-size: 13px;
 }
 
 .productBody .firstSection .rightPart .content {
   background: #F7F8FDFF;
+  font-size: 12px;
 }
 
 .productBody .firstSection .rightPart .content span {
@@ -1730,6 +2074,14 @@ footer .contactBody .contact .contactNumb {
   margin-left: 10px;
 }
 
+.productBody .tabSection .thirdTabContent .adminContent .adminComment .bxs-star.gold {
+  color: #FFCD00FF;
+}
+
+.productBody .tabSection .thirdTabContent .adminContent .adminComment .bxs-star.grey {
+  color: #D6D6E5FF;
+}
+
 .productBody .tabSection .thirdTabContent .secondHead {
   border-bottom: 1px solid;
   padding-bottom: 20px;
@@ -1739,17 +2091,33 @@ footer .contactBody .contact .contactNumb {
   margin-top: 30px;
 }
 
-.productBody .tabSection .thirdTabContent .emailContent .rating .line {
+.productBody .tabSection .thirdTabContent .emailContent #rating .active i {
+  text-shadow: rgba(0, 0, 0, 0) 0px;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent #rating i {
+  cursor: pointer;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent #rating .bxs-star.gold {
+  color: #FFCD00FF;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent #rating .bxs-star.grey {
+  color: #D6D6E5FF;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent .line {
   margin: 0 15px;
   margin-bottom: 5px;
 }
 
-.productBody .tabSection .thirdTabContent .emailContent form label {
+.productBody .tabSection .thirdTabContent form label {
   width: 100%;
   margin-bottom: 10px;
 }
 
-.productBody .tabSection .thirdTabContent .emailContent form textarea {
+.productBody .tabSection .thirdTabContent form textarea {
   background: #F3F4F7FF;
   border: none;
   outline: none;
@@ -1758,7 +2126,7 @@ footer .contactBody .contact .contactNumb {
   padding: 20px;
 }
 
-.productBody .tabSection .thirdTabContent .emailContent form .inp {
+.productBody .tabSection .thirdTabContent form .inp {
   background: #F3F4F7FF;
   width: 100%;
   margin-bottom: 10px;
@@ -1767,22 +2135,16 @@ footer .contactBody .contact .contactNumb {
   border: none;
 }
 
-.productBody h5 {
-  margin: 0 -4%;
-  background: #F7F8FDFF;
-  padding: 70px 50px 30px;
-}
-
-.productBody .lastSection {
+.lastSection {
   margin: 4% 11%;
 }
 
-.productBody .lastSection .product {
+.lastSection .product {
   border: 0.5px solid #d6d6d6;
   background-color: white;
 }
 
-.productBody .lastSection .product .content {
+.lastSection .product .content {
   padding: 15px 25px;
   cursor: pointer;
   position: relative;
@@ -1790,7 +2152,7 @@ footer .contactBody .contact .contactNumb {
           transition-duration: 0.5s;
 }
 
-.productBody .lastSection .product .content:hover {
+.lastSection .product .content:hover {
   position: absolute;
   padding: 15px 25px;
   width: 18.7%;
@@ -1801,40 +2163,40 @@ footer .contactBody .contact .contactNumb {
           box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
 }
 
-.productBody .lastSection .product .content:hover .discount {
+.lastSection .product .content:hover .discount {
   top: 4.2%;
   padding: 5px 15px;
 }
 
-.productBody .lastSection .product .content:hover .offer {
+.lastSection .product .content:hover .offer {
   top: 13%;
   padding: 5px 15px;
 }
 
-.productBody .lastSection .product .content:hover .type {
+.lastSection .product .content:hover .type {
   top: 13%;
   padding: 5px 15px;
 }
 
-.productBody .lastSection .product .content:hover .minimize {
+.lastSection .product .content:hover .minimize {
   right: 8.5%;
   visibility: visible;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
 
-.productBody .lastSection .product .content:hover .heart {
+.lastSection .product .content:hover .heart {
   right: 8%;
   visibility: visible;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
 }
 
-.productBody .lastSection .product .content:hover button {
+.lastSection .product .content:hover button {
   display: block;
 }
 
-.productBody .lastSection .product .content:hover .prodCount {
+.lastSection .product .content:hover .prodCount {
   display: none;
   position: relative;
   text-align: center;
@@ -1842,7 +2204,7 @@ footer .contactBody .contact .contactNumb {
   padding-bottom: 24px;
 }
 
-.productBody .lastSection .product .content:hover .prodCount :last-child {
+.lastSection .product .content:hover .prodCount :last-child {
   right: 10%;
   position: absolute;
   font-size: 20px;
@@ -1853,7 +2215,7 @@ footer .contactBody .contact .contactNumb {
   border: none;
 }
 
-.productBody .lastSection .product .content:hover .prodCount :first-child {
+.lastSection .product .content:hover .prodCount :first-child {
   position: absolute;
   left: 10%;
   font-size: 20px;
@@ -1864,11 +2226,11 @@ footer .contactBody .contact .contactNumb {
   border: none;
 }
 
-.productBody .lastSection .product .content .description {
+.lastSection .product .content .description {
   font-size: 12px;
 }
 
-.productBody .lastSection .product .content i {
+.lastSection .product .content i {
   position: absolute;
   visibility: hidden;
   top: 12%;
@@ -1879,7 +2241,7 @@ footer .contactBody .contact .contactNumb {
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 2px, rgba(17, 17, 26, 0.1) 0px 16px 4px;
 }
 
-.productBody .lastSection .product .content .discount {
+.lastSection .product .content .discount {
   position: absolute;
   top: 5%;
   font-size: 11px;
@@ -1890,7 +2252,7 @@ footer .contactBody .contact .contactNumb {
   background-color: #2BBEF9FF;
 }
 
-.productBody .lastSection .product .content .offer {
+.lastSection .product .content .offer {
   position: absolute;
   top: 15%;
   font-size: 10px;
@@ -1901,7 +2263,7 @@ footer .contactBody .contact .contactNumb {
   background-color: #71778EFF;
 }
 
-.productBody .lastSection .product .content .type {
+.lastSection .product .content .type {
   position: absolute;
   top: 15%;
   font-size: 10px;
@@ -1912,46 +2274,46 @@ footer .contactBody .contact .contactNumb {
   background-color: #E5F8EDFF;
 }
 
-.productBody .lastSection .product .content .minimize {
+.lastSection .product .content .minimize {
   top: 5%;
   right: 5%;
 }
 
-.productBody .lastSection .product .content .minimize:hover {
+.lastSection .product .content .minimize:hover {
   background-color: #233A95FF;
   color: white;
 }
 
-.productBody .lastSection .product .content .heart {
+.lastSection .product .content .heart {
   top: 15%;
   right: 2%;
 }
 
-.productBody .lastSection .product .content .heart:hover {
+.lastSection .product .content .heart:hover {
   background-color: #233A95FF;
   color: white;
 }
 
-.productBody .lastSection .product .content p {
+.lastSection .product .content p {
   width: 90%;
   margin: 0 !important;
 }
 
-.productBody .lastSection .product .content p img {
+.lastSection .product .content p img {
   width: 60%;
 }
 
-.productBody .lastSection .product .content strong {
+.lastSection .product .content strong {
   font-size: 10px;
   font-weight: 700;
   color: #2FC573FF;
 }
 
-.productBody .lastSection .product .content img {
+.lastSection .product .content img {
   width: 100%;
 }
 
-.productBody .lastSection .product .content button {
+.lastSection .product .content button {
   display: none;
   padding: 5px 70px;
   font-size: 12px;
@@ -1959,21 +2321,21 @@ footer .contactBody .contact .contactNumb {
   border-radius: 20px;
 }
 
-.productBody .lastSection .product .content button,
-.productBody .lastSection .product .content .prodCount {
+.lastSection .product .content button,
+.lastSection .product .content .prodCount {
   display: none;
   padding: 5px 70px;
   margin: 20px 10px 3px;
   border-radius: 10px;
 }
 
-.productBody .lastSection .product .content .prodCount {
+.lastSection .product .content .prodCount {
   display: none;
   position: relative;
   text-align: center;
 }
 
-.productBody .lastSection .product .content .prodCount :last-child {
+.lastSection .product .content .prodCount :last-child {
   right: 10%;
   position: absolute;
   font-size: 20px;
@@ -1984,7 +2346,7 @@ footer .contactBody .contact .contactNumb {
   border: none;
 }
 
-.productBody .lastSection .product .content .prodCount :first-child {
+.lastSection .product .content .prodCount :first-child {
   position: absolute;
   left: 10%;
   font-size: 20px;

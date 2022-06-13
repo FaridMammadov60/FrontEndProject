@@ -1,12 +1,19 @@
 let table = document.getElementById("table")
 let rtnBtn = document.getElementById("rtnBtn")
-let productCount = document.getElementById("productCount");
-let totalPrice = document.getElementById("productUsd");
-let sumTotalPrice = 0;
-rtnBtn.classList.remove("d-none");
+// let productCount = document.getElementById("product-count");
+let totalPricess = document.getElementById("totalPricess")
+// let sumTotalPrice = 0;
+rtnBtn.classList.remove("d-none")
 
 if (localStorage.getItem("basket") != null) {
+
     let arr = JSON.parse(localStorage.getItem("basket"));
+    if (productCount.innerText == 0) {
+        productCount.parentElement.classList.remove("bx-tada")
+    }
+    else if (productCount.innerText > 0) {
+        productCount.parentElement.classList.add("bx-tada")
+    }
     arr.forEach(product => {
         if (product.count > 0) {
             rtnBtn.classList.add("d-none")
@@ -19,7 +26,7 @@ if (localStorage.getItem("basket") != null) {
             let tdName = document.createElement("td")
             tdName.innerText = product.name
             let tdPrice = document.createElement("td")
-            tdPrice.innerText = product.price
+            tdPrice.innerText = `$ ${product.price}`
             let tdCount = document.createElement("td")
 
             let minusBtn = document.createElement("button")
@@ -53,7 +60,7 @@ if (localStorage.getItem("basket") != null) {
 
             let tdSubTotal = document.createElement("td")
             let oneProductPrice = product.count * product.price
-            tdSubTotal.innerText = oneProductPrice
+            tdSubTotal.innerText = `$ ${oneProductPrice}`
 
             let removeBtn = document.createElement("td")
             let remove = document.createElement("button")
@@ -64,7 +71,7 @@ if (localStorage.getItem("basket") != null) {
             tr.append(tdImage, tdName, tdPrice, tdCount, tdSubTotal, removeBtn)
             table.append(tr)
             sumTotalPrice += product.count * product.price;
-            totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
+            totalPrice.innerText = `$ ${parseFloat(sumTotalPrice).toFixed(2)}`;
 
             minus.onclick = function () {
                 product.count--
@@ -85,10 +92,8 @@ if (localStorage.getItem("basket") != null) {
                     if (table.children.length == 2) {
                         rtnBtn.classList.remove("d-none")
                     }
-                    // product.count = 0;
                     sumTotalPrice -= parseFloat(product.price);
                     totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
-
                 }
                 localStorage.setItem("basket", JSON.stringify(arr))
                 WriteProductCount();
@@ -116,18 +121,30 @@ if (localStorage.getItem("basket") != null) {
                 let zero = arr.filter(element => element.count > 0);
                 let newArr = [...zero];
                 arr = newArr
+                if (productCount.innerText == 0) {
+                    productCount.parentElement.classList.remove("bx-tada")
+                }
+                if (table.children.length == 2) {
+                    productCount.parentElement.classList.remove("bx-tada")
+                    rtnBtn.classList.remove("d-none")
+                }
                 totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
                 localStorage.setItem("basket", JSON.stringify(arr));
                 WriteProductCount();
             }
-
         }
-        else
+        else {
             rtnBtn.classList.remove("d-none")
+        }
         WriteProductCount()
     });
 }
-
+if (productCount.innerText == 0) {
+    productCount.parentElement.classList.remove("bx-tada")
+}
+else if (productCount.innerText > 0) {
+    productCount.parentElement.classList.add("bx-tada")
+}
 
 function WriteProductCount() {
     if (localStorage.getItem("basket") != null) {
@@ -140,7 +157,8 @@ function WriteProductCount() {
             sumTotalPrice += oneProdPrice
         })
         productCount.innerText = totalCount;
-        totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2)
+        totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
+        totalPricess.innerText = sumTotalPrice;
     }
 }
 WriteProductCount();
